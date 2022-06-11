@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d9ae5a944.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+
+
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="./assets/images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About Us page content -->
+
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam itaque ab animi aliquid
+                    esse ipsum iusto blanditiis est. Est explicabo accusantium molestiae ea obcaecati laboriosam id eum
+                    ad atque. Quia, ea porro.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="./assets/images/about.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repudiandae architecto ea quod? Incidunt
+            facilis voluptates laboriosam, porro sapiente culpa<br> esse ducimus et necessitatibus quibusdam totam
+            adrecusandae voluptas suscipit accusantium vel optio doloribus eaque odit ipsum.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made by <i class="fa-solid fa-at"></i>grumpyrumman on <i class="fa-brands fa-instagram-square"></i> </p>
+    </section>
+    <!-- ------- JavaScript for Toggle Menu ------- -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+
+</html>
